@@ -16,8 +16,6 @@ const SearchBar = ({ onFormSubmit }) => {
     >
       <form onSubmit={onSubmit} className="ui form">
         <div className="field">
-          <div class="ui search focus">
-            <div class="ui icon input">
               <label style={{ color: "white", fontSize: "24px" }}>
                 Youtube
               </label>
@@ -30,10 +28,7 @@ const SearchBar = ({ onFormSubmit }) => {
                 onChange={onInputChange}
               />
               <i class="search icon"></i>
-            </div>
-            <div class="results"></div>
-          </div>
-        </div>
+              </div>
       </form>
     </div>
   );
