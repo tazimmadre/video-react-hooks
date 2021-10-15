@@ -32,7 +32,7 @@ const App=()=>{
           <div className="five wide column">
             <VideoList
               className="videolist"
-              onVideoSelect={(video)=>{setSelectedVideo(video)}}
+              onVideoSelect={setSelectedVideo}
               videos={videos}
             />
           </div>
