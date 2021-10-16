@@ -25,7 +25,7 @@ const App=()=>{
   return (
     <div className="main-div ui container">
       <SearchBar className="searchbar" onFormSubmit={onTermSubmit} />
-      <div className="div-button ui">
+      <div className="div-button">
         <button
           className="ui primary small basic button b1"
           onClick={() => {
@@ -75,7 +75,7 @@ const App=()=>{
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 export default App;
