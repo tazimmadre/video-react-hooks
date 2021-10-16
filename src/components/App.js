@@ -60,13 +60,13 @@ const App=()=>{
         </button>
       </div>
       <hr></hr>
-      <div className="ui grid">
-        <div className="ui row ">
-          <div className="eleven wide column">
+      {/* <div className="ui grid "> */}
+        <div className="ui row">
+          <div className="eleven wide column one">
             <VideoDetail className="videodetail" video={selectedVideo} />
           </div>
           <hr></hr>
-          <div className="five wide column">
+          <div className="five wide column two">
             <VideoList
               className="videolist"
               onVideoSelect={setSelectedVideo}
@@ -75,7 +75,7 @@ const App=()=>{
           </div>
         </div>
       </div>
-    // </div>
+    //  </div>
   );
 }
 export default App;
