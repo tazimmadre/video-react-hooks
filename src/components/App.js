@@ -25,46 +25,47 @@ const App=()=>{
   return (
     <div className="main-div ui container">
       <SearchBar className="searchbar" onFormSubmit={onTermSubmit} />
-      <div className="div-button">
+      <div className="div-button ui">
         <button
-          className="ui primary basic button b1"
+          className="ui primary small basic button b1"
           onClick={() => {
             onTermSubmit("Music");
           }}
         >
-          Music
+          <i className="music icon"></i>Music
         </button>
         <button
-          className="ui primary basic button b2"
+          className="ui primary small basic button b2"
           onClick={() => {
             onTermSubmit("Gaming");
           }}
         >
-          Gaming
+          <i className="gamepad icon"></i>Gaming
         </button>
         <button
-          className="ui primary basic button b3"
+          className="ui primary small basic button b3"
           onClick={() => {
             onTermSubmit("News");
           }}
         >
-          News
+          <i className="newspaper outline icon"></i>News
         </button>
         <button
-          className="ui primary basic button b4"
+          className="ui primary small basic button b4"
           onClick={() => {
             onTermSubmit("Live");
           }}
         >
-          Live
+          <i className="tv icon"></i>Live
         </button>
-        <hr></hr>
       </div>
+      <hr></hr>
       <div className="ui grid">
-        <div className="ui row rower">
+        <div className="ui row ">
           <div className="eleven wide column">
             <VideoDetail className="videodetail" video={selectedVideo} />
           </div>
+          <hr></hr>
           <div className="five wide column">
             <VideoList
               className="videolist"
